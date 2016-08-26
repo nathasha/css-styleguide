@@ -171,21 +171,21 @@ Example: Using SASS mixin for naming and nesting meida queries.
 <pre>
 /* Bad */
 
-$tablet: "(min-width: 768px) and (max-width: 1023px)";
-$desktop: "(min-width: 1024px)";
+$TABLET: "(min-width: 768px) and (max-width: 1023px)";
+$DESKTOP: "(min-width: 1024px)";
 
 .btn {
   width: 100%;
   background: red;
 }
 
-@media #{$tablet} {
+@media #{$TABLET} {
   .btn {
     background: green;
   }
 }
 
-@media #{$desktop} {
+@media #{$DESKTOP} {
   .btn {
     background: pink;
   }
@@ -196,26 +196,26 @@ $desktop: "(min-width: 1024px)";
 <pre>
 /* Good */
 
-$tablet-width: 768px;
-$mobile-width: 320px;
+$TABLET_WIDTH: 768px;
+$MOBILE_WIDTH: 320px;
 
 @mixin tablet {
-  @media (max-width: #{$tablet-width}) {
+  @media (max-width: #{$TABLET_WIDTH}) {
     @content;
   }
 }
 
 @mixin mobile {
-  @media (max-width: #{$mobile-width}) {
+  @media (max-width: #{$MOBILE_WIDTH}) {
     @content;
   }
 }
 
 .btn {
 	background: red;
-  width: 90%;
-  height: 100px;
-  display: block;
+	width: 90%;
+	height: 100px;
+	display: block;
 	 
 	@include tablet {
 	  background: green;
