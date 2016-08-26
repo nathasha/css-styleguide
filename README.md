@@ -148,7 +148,7 @@ Use variables for recurring values.
 
 Variables should be **UPPER_CASE** and use **underscores** to separate words.
 
-Variables that should not be used as values of properties, but should be assigned to other variables, should use the start with an underscore.
+Variables that should not be used as values of properties, but should be assigned to other variables, should start with an underscore.
 
 <pre>
 $_PINK: DeepPink;
@@ -387,4 +387,7 @@ Namespcing every class allows us to ascertain exactly what kind of job a class m
 	.qa-error-login {}
 				
 	</pre>
+
+## TODO
+* Add SASS Docs
 
