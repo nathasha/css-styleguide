@@ -166,15 +166,66 @@ Why?
 1. You don't have to re-write the selector somewhere else, which can be error prone.
 2. The rules that you are overriding are very clear and obvious, which is usually not the case when they are at the bottom of your CSS or in a different file.
 
+Example: Using SASS mixin for naming and nesting meida queries.
+
 <pre>
+/* Bad */
+
+$tablet: "(min-width: 768px) and (max-width: 1023px)";
+$desktop: "(min-width: 1024px)";
+
 .btn {
-    float: right;
-    width: 33.33%;
- 
-    @media (max-width: 650px) {
-        width 100%;
-    }
+  width: 100%;
+  background: red;
 }
+
+@media #{$tablet} {
+  .btn {
+    background: green;
+  }
+}
+
+@media #{$desktop} {
+  .btn {
+    background: pink;
+  }
+}
+
+</pre>
+	
+<pre>
+/* Good */
+
+$tablet-width: 768px;
+$mobile-width: 320px;
+
+@mixin tablet {
+  @media (max-width: #{$tablet-width}) {
+    @content;
+  }
+}
+
+@mixin mobile {
+  @media (max-width: #{$mobile-width}) {
+    @content;
+  }
+}
+
+.btn {
+	background: red;
+  width: 90%;
+  height: 100px;
+  display: block;
+	 
+	@include tablet {
+	  background: green;
+	}
+		
+	@include mobile {
+		background: pink;
+	}
+}
+	
 </pre>
 
 
