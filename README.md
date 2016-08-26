@@ -6,8 +6,7 @@ We use [SASS](http://sass-lang.com/) for our CSS preprocessor.
 Fully document your css. Treat it like you would JavaScript. If you are adding properties, to try and deal with an issue or you are doing tricky work with pseudo elements etc, make sure you are documenting.
 
 Stay consistent with your code. If you feel the standards need expansion or changes, bring them up with the team for discussion. It's not as important what we do but that we all do.
-
-:question: => [:email:](mailto:frontend@mediatemple.net) or [Slack](https://godaddy.slack.com/archives/mt-front-end).  
+  
 
 ## Terminology
 ### Rule declaration
