@@ -7,7 +7,7 @@ Fully document your css. Treat it like you would JavaScript. If you are adding p
 
 Stay consistent with your code. If you feel the standards need expansion or changes, bring them up with the team for discussion. It's not as important what we do but that we all do.
 
-For :question: , [:email:](mailto:frontend@mediatemple.net) or [FE Slack :computer:](https://godaddy.slack.com/archives/mt-front-end).  
+If you have any :question: :question:, [:email:](mailto:frontend@mediatemple.net) or [Slack](https://godaddy.slack.com/archives/mt-front-end).  
 
 ## Terminology
 ### Rule declaration
